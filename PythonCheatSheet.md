@@ -1,5 +1,5 @@
-Access to features and their attributes:
-(Source: http://resources.arcgis.com/en/help/main/10.2/index.html#/FeatureClassToNumPyArray/018w00000015000000/)
+Access features and their attributes with arcpy  
+Source: http://resources.arcgis.com/en/help/main/10.2/index.html#/FeatureClassToNumPyArray/018w00000015000000/
 
 Example 1: Print a feature's OID and coordinates 
 ```python

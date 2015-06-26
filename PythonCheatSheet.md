@@ -23,7 +23,7 @@ for feature_x in features_array:
   #  (1, [-147.82339477539062, 64.86953735351562])
 ```
 
-Example 2: Print attribute fields coordinates 
+Example 2: Print attribute fields 
 ```python
 import arcpy
 import numpy

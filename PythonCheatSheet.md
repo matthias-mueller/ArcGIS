@@ -25,7 +25,7 @@ Additional information can be accessed using tokens (such as OID@) in place of f
     OID@ —The value of the ObjectID field.
 
 Example 2: print attribute fields coordinates 
-```
+```python
 import arcpy
 import numpy
 

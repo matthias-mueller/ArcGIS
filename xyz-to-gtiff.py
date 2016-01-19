@@ -33,4 +33,4 @@ gtiff_files += [each for each in os.listdir(".") if each.endswith('.tif')]
 
 # mosaic to raster
 ws_mosaic = os.path.abspath(".")
-arcpy.MosaicToNewRaster_management(gtiff_files, ws_mosaic, "mosaic.tif", projection, datatype, cellsize, "1", "LAST","FIRST")
+arcpy.MosaicToNewRaster_management(gtiff_files, ws_mosaic, "mosaic.tif", projection, datatype, cellsize, "1", "MEAN","FIRST")

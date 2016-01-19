@@ -1,3 +1,5 @@
+# Converts 3D xyz data to geotiff
+
 import arcpy, os
 
 arcpy.CheckOutExtension("3D")

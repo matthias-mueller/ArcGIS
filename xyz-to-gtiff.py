@@ -5,6 +5,7 @@ arcpy.CheckOutExtension("3D")
 projection = arcpy.SpatialReference(31469) # "DHDN_3_Degree_Gauss_Zone_5"
 
 suffix = '.xyz'
+suffix_len = len(suffix)
 cellsize = 2
 datatype = "32_BIT_FLOAT"
 
@@ -14,8 +15,8 @@ for fn in os.listdir('.'):
         print (fn)
         xyz = os.path.abspath(fn)
         print (xyz)
-        shape_name = str(xyz[:-4])+".shp"
-	raster_name = str(xyz[:-4])+".tif"
+        shape_name = str(xyz[:-suffix_len])+".shp"
+	raster_name = str(xyz[:-suffix_len])+".tif"
 	
 	arcpy.ASCII3DToFeatureClass_3d(xyz,"XYZ",shape_name,"POINT","1",projection,"1","","DECIMAL_POINT")
 	print (shape_name)	

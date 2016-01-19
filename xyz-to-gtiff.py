@@ -4,12 +4,13 @@ arcpy.CheckOutExtension("3D")
 
 projection = arcpy.SpatialReference(31469) # "DHDN_3_Degree_Gauss_Zone_5"
 
+suffix = '.xyz'
 cellsize = 2
 datatype = "32_BIT_FLOAT"
 
 # some useful stuff came from here: http://gis.stackexchange.com/questions/62984/importing-xyz-to-arcmap
 for fn in os.listdir('.'):
-     if os.path.isfile(fn) & fn.endswith('.xyz'):
+     if os.path.isfile(fn) & fn.endswith(suffix):
         print (fn)
         xyz = os.path.abspath(fn)
         print (xyz)
